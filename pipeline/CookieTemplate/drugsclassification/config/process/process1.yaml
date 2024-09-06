@@ -1,0 +1,8 @@
+target: Drug
+features: 
+  - Age
+  - Sex
+  - BP
+  - Cholesterol
+  - Na
+  - K

@@ -1,0 +1,15 @@
+process:
+  Target: Drug
+  Features:
+  - Age
+  - Sex
+  - BP
+  - Cholesterol
+  - Na
+  - K
+model:
+  name: model1
+data:
+  raw: data/raw/Drug.csv
+  processed: data/processed/processed.csv
+  final: data/final/final.csv

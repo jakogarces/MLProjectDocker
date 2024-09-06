@@ -1,0 +1,30 @@
+process:
+  target: Drug
+  features:
+  - Age
+  - Sex
+  - BP
+  - Cholesterol
+  - Na
+  - K
+model:
+  name: LogisticReg
+  dir: ../models
+  path: ${model.dir}/${model.name}
+raw:
+  path: ../data/raw/Drug.csv
+processed:
+  dir: ../data/processed
+  X_train:
+    name: X_train.csv
+    path: ${processed.dir}/${processed.X_train.name}
+  X_test:
+    name: X_test.csv
+    path: ${processed.dir}/${processed.X_test.name}
+  y_train:
+    name: y_train.csv
+    path: ${processed.dir}/${processed.y_train.name}
+  y_test:
+    name: y_test.csv
+    path: ${processed.dir}/${processed.y_test.name}
+mlflow_tracking_ui: http://127.0.0.1:5001/
